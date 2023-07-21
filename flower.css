@@ -1,0 +1,31 @@
+h1 {
+ text-align: center;
+ color: black;
+}
+
+figure {
+    text-align: center;
+}
+
+#featured-image {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 80px;
+    margin: 5px;
+    cursor: pointer;
+    filter: grayscale(100%); /* Render in grayscale */
+}
+
+.thumbnail:hover {
+    opacity: 0.7;
+}
+
+.thumbnail.active {
+    border: 2px solid red;
+    filter: grayscale(0%); /* Current active image in full color */
+}
